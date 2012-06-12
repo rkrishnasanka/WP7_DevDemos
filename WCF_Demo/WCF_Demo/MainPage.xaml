@@ -1,0 +1,74 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="WCF_Demo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768" 
+    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <controls:Pivot Title="MY APPLICATION" Margin="0,22,0,-22">
+            <!--Pivot item one-->
+            <controls:PivotItem Header="Hop Data">
+                <!--Double line list with text wrapping-->
+                <Grid>
+                    <TextBox Height="72" HorizontalAlignment="Left" Margin="8,241,0,0" Name="textBox_hop" Text="" VerticalAlignment="Top" Width="460">
+                        <TextBox.InputScope>
+                            <InputScope>
+                                <InputScopeName NameValue="Digits"></InputScopeName>
+                            </InputScope>
+                        </TextBox.InputScope>
+                    </TextBox>
+                    <TextBlock Height="30" HorizontalAlignment="Left" Margin="25,205,0,0" Name="textBlock2" Text="Enter a number here" VerticalAlignment="Top" Width="179" />
+                    <Button Content="Send" Height="72" HorizontalAlignment="Left" Margin="142,341,0,0" Name="button2" VerticalAlignment="Top" Width="160" Click="button2_Click" />
+                    <TextBlock Height="30" HorizontalAlignment="Left" Margin="112,559,0,0" Name="textBlock3" Text="Result comes here" VerticalAlignment="Top" Width="222" TextAlignment="Center" />
+                </Grid>
+            </controls:PivotItem>
+ 
+            <!--Pivot item two-->
+            <controls:PivotItem Header="Multi-Data Hop"> 
+                <!--Triple line list no text wrapping-->
+                <Grid>
+                    <TextBlock Height="30" HorizontalAlignment="Left" Margin="16,31,0,0" Name="textBlock4" Text="Enter an Integer" VerticalAlignment="Top" Width="203" />
+                    <TextBox Height="72" HorizontalAlignment="Left" Margin="2,67,0,0" Name="textBox_multihopnumber" Text="" VerticalAlignment="Top" Width="460" />
+                    <CheckBox Content="Add Suffix  &quot;-meh&quot;" Height="72" HorizontalAlignment="Left" Margin="18,161,0,0" Name="checkBox1" VerticalAlignment="Top" Width="305" />
+                    <Button Content="Send" Height="72" HorizontalAlignment="Left" Margin="150,0,0,288" Name="button3" VerticalAlignment="Bottom" Width="160" Click="button3_Click" />
+                    <TextBlock Height="30" HorizontalAlignment="Left" Margin="203,338,0,0" x:Name="textBlock5" VerticalAlignment="Top" Text="Result" />
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+                    <TextBlock Height="165" Margin="29,0,18,36" TextWrapping="Wrap" VerticalAlignment="Bottom" Name="textBlock_multihopResult" />
+                </Grid>
+            </controls:PivotItem>
+            
+            <controls:PivotItem Header="Joke">
+               <Grid>
+                    <TextBlock Height="232" HorizontalAlignment="Left" Margin="33,46,0,0" Name="textBlock1" Text="" VerticalAlignment="Top" Width="393" />
+                    <Button Content="Get Joke" Height="72" HorizontalAlignment="Left" Margin="145,350,0,0" Name="button1" VerticalAlignment="Top" Width="160" Click="button1_Click" />
+                </Grid>
+            </controls:PivotItem>
+        </controls:Pivot>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d1c32c25-cbe5-4022-b43f-cf973ddbea24" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.16.2/WP7/Service1.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service11.wsdl" MetadataType="Wsdl" ID="20e6fd86-4a61-4dbe-be53-62a3da8d89d6" SourceId="1" SourceUrl="http://192.168.16.2/WP7/Service1.svc?wsdl" />
+    <MetadataFile FileName="Service13.xsd" MetadataType="Schema" ID="49401b56-26fb-4894-80ce-aeae994603ef" SourceId="1" SourceUrl="http://192.168.16.2/WP7/Service1.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service131.xsd" MetadataType="Schema" ID="2696815f-f05a-482a-87a7-8e16b37224e8" SourceId="1" SourceUrl="http://192.168.16.2/WP7/Service1.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service132.xsd" MetadataType="Schema" ID="312d27d2-b910-4384-a8fe-bef64a131576" SourceId="1" SourceUrl="http://192.168.16.2/WP7/Service1.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service11.disco" MetadataType="Disco" ID="13ae4767-2af5-4905-809c-76d7b808e018" SourceId="1" SourceUrl="http://192.168.16.2/WP7/Service1.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
